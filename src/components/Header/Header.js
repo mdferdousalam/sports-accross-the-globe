@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBasketball } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
-import "./Header.css";
 const Header = () => {
   return (
     <div className="   md:mt-7 lg:my-9  pl-5 text-white bg-orange-600 md:bg-cyan-400 lg:bg-blue-500">
