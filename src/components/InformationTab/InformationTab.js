@@ -30,7 +30,7 @@ const InformationTab = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-around items-center my-3 bg-slate-600 rounded-xl text-white py-3">
+      <div className="flex justify-around items-center my-3 bg-slate-600 rounded-xl text-white mx-2 py-3">
         <p>
           62 <span>Kg</span>
           <br />
@@ -48,9 +48,11 @@ const InformationTab = () => {
         </p>
       </div>
       <div>
-        <h1 className="text-3xl lg:text-xl font-semibold my-4">Add A Break</h1>
+        <h1 className="text-3xl lg:text-xl font-semibold ml-2 my-4">
+          Add A Break
+        </h1>
       </div>
-      <div className="flex justify-around items-center my-3 bg-slate-600 rounded-xl text-white py-3 text-xl">
+      <div className="flex justify-around items-center my-3 bg-slate-600 rounded-xl text-white mx-2 py-3 text-xl">
         <p className="rounded-full bg-sky-400 p-1 ">10s</p>
         <p className="rounded-full bg-sky-400 p-1 ">20s</p>
         <p className="rounded-full bg-sky-400 p-1 ">30s</p>
@@ -58,22 +60,26 @@ const InformationTab = () => {
         <p className="rounded-full bg-sky-400 p-1 ">50s</p>
       </div>
       <div>
-        <h1 className="text-3xl lg:text-xl font-semibold mt-12">
+        <h1 className="text-3xl lg:text-xl font-semibold ml-2 mt-12">
           Sports Details
         </h1>
       </div>
       <div>
-        <h1 className="text-3xl lg:text-xl font-semibold mt-10">Play Time:</h1>
+        <h1 className="text-3xl lg:text-xl font-semibold ml-2 mt-10">
+          Play Time:
+        </h1>
       </div>
       <div>
-        <h1 className="text-3xl lg:text-xl font-semibold my-4">Break Time:</h1>
+        <h1 className="text-3xl lg:text-xl font-semibold ml-2 my-4">
+          Break Time:
+        </h1>
       </div>
       <div className="flex justify-center items-center mt-20">
         <button
           onClick={() => {
             toast();
           }}
-          className="bg-sky-900 text-white text-3xl rounded-xl px-7 mb-7"
+          className="bg-sky-900 text-white text-3xl rounded-xl py-2 px-7 mb-7"
         >
           Activity Completed
         </button>
