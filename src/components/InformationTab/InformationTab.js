@@ -45,6 +45,22 @@ const InformationTab = () => {
         <p className="rounded-full bg-sky-400 p-1 ">40s</p>
         <p className="rounded-full bg-sky-400 p-1 ">50s</p>
       </div>
+      <div>
+        <h1 className="text-3xl lg:text-xl font-semibold mt-12">
+          Sports Details
+        </h1>
+      </div>
+      <div>
+        <h1 className="text-3xl lg:text-xl font-semibold mt-10">Play Time:</h1>
+      </div>
+      <div>
+        <h1 className="text-3xl lg:text-xl font-semibold my-4">Break Time:</h1>
+      </div>
+      <div className="flex justify-center items-center mt-20">
+        <button className="bg-sky-900 text-white text-3xl rounded-xl px-7 mb-7">
+          Activity Completed
+        </button>
+      </div>
     </div>
   );
 };
