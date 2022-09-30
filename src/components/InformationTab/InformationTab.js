@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -11,11 +11,19 @@ const InformationTab = ({ duration }) => {
     toast.success("Congratulations You have Done Successfully");
   };
 
-  const [breaktime, setBreaktime] = useState(0);
+  const [breaktime, setBreaktime] = useState("0s");
 
   const breakDisplay = (t) => {
+    localStorage.setItem("breakTime", t);
     setBreaktime(t);
   };
+
+  useEffect(() => {
+    const localStorageBreakTime = localStorage.getItem("breakTime");
+    if (localStorageBreakTime) {
+      setBreaktime(localStorageBreakTime);
+    }
+  }, []);
 
   let times = 0;
   for (const t of duration) {
