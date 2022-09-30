@@ -3,17 +3,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 const InformationTab = ({ duration }) => {
-  const toast = () => {
-    return (
-      <div class="toast toast-center">
-        <div class="alert alert-success">
-          <div>
-            <span>You Have Done successfully.</span>
-          </div>
-        </div>
-      </div>
-    );
+  const toastDisplay = () => {
+    toast.success("Congratulations You have Done Successfully");
   };
 
   const [breaktime, setBreaktime] = useState(0);
@@ -123,13 +118,12 @@ const InformationTab = ({ duration }) => {
       </div>
       <div className="flex justify-center items-center mt-20">
         <button
-          onClick={() => {
-            toast();
-          }}
+          onClick={toastDisplay}
           className="bg-sky-900 text-white text-3xl rounded-xl py-2 px-7 mb-7"
         >
           Activity Completed
         </button>
+        <ToastContainer hideProgressBar position="top-center"></ToastContainer>
       </div>
     </div>
   );
